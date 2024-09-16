@@ -1,7 +1,7 @@
 import os
 import pandas as pd
 from params import folders, num_imgs, img_size
-from .utils import get_img_hists_arr
+from .utils import get_img_features_arr
 
 
 def images_to_csv(folder: str, num_imgs=-1, img_size=-1):
@@ -16,7 +16,7 @@ def images_to_csv(folder: str, num_imgs=-1, img_size=-1):
     max_imgs_data_len = 100
     for img_file in img_files:
         img_path = os.path.join(folder, img_file)
-        imgs_features.append(get_img_hists_arr(img_path))
+        imgs_features.append(get_img_features_arr(img_path))
         if len(imgs_features) == max_imgs_data_len:
             df = pd.DataFrame(imgs_features)
             df.to_csv(output_csv, index=False, mode='a')
