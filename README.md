@@ -49,7 +49,7 @@ classify_imgs = ['gorilla.jpg', 'gorilla2.jpg',
 
 ## Convertendo imagens para CSV
 
-`poetry run train`
+`poetry run imgs_to_csv`
 
 Para cada valor no parâmetro `folders`, um arquivo `.csv` será gerado no diretório raiz.
 
