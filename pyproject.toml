@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "knn_img_classifier"
+version = "0.1.0"
+description = ""
+authors = ["Rafael Santos <rafaelsantos32141@gmail.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = ">=3.10"
+numpy = "^2.1.1"
+pandas = "^2.2.2"
+pillow = "^10.4.0"
+scikit-learn = "^1.5.2"
+
+[tool.poetry.scripts]
+imgs_to_csv = "knn_img_classifier.imgs_to_csv:run"
+train = "knn_img_classifier.train:run"
+predict = "knn_img_classifier.predict:run"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
