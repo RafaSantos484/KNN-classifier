@@ -14,7 +14,7 @@ Na fase de classificação, a classe de um elemento não classificado será defi
 
 ![1726497263796](image/README/1726497263796.png)
 
-No caso deste projeto, as features das imagens são os valores dos seus histogramas para os canais R, G e B. O treinamento é feito usando a biblioteca [Sklearn](https://scikit-learn.org/stable/) e o processamento das imagens é feito usando [Numpy](https://numpy.org/), [Pandas](https://pandas.pydata.org/) e [OpenCv](https://opencv.org/).
+No caso deste projeto, as features das imagens são os valores dos seus histogramas para os canais R, G e B. O treinamento é feito usando a biblioteca [Sklearn](https://scikit-learn.org/stable/) e o processamento das imagens é feito usando [Numpy](https://numpy.org/), [Pandas](https://pandas.pydata.org/) e [OpenCv](https://opencv.org/). As imagens das pastas `gorillas` e `orangutans` foram obtidas no site [imgs.cv](https://images.cv/).
 
 # Parâmetros de Treino
 
@@ -31,7 +31,6 @@ max_k = 100
 classify_imgs = ['gorilla.jpg', 'gorilla2.jpg',
                 'orangutan.jpg', 'orangutan2.jpg']
 ```
-
 
 * `folders` - Pastas contendo as imagens para treinamento
 * `img_size` - Dimensão para a qual todas as imagens serão redimensionadas
