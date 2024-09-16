@@ -1,5 +1,5 @@
 folders = ['gorillas', 'orangutans']
-img_size = 128
+img_size = 256
 num_imgs = -1
 test_size = 0.3
 random_state = 42
