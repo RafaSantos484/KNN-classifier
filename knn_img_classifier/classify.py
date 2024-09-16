@@ -1,6 +1,6 @@
 import pickle
 from sklearn.neighbors import KNeighborsClassifier
-from params import predict_imgs
+from params import classify_imgs
 from .utils import get_img_hists_arr
 
 
@@ -10,8 +10,8 @@ def run():
     knn_pickle.close()
 
     imgs_features = []
-    for predict_img in predict_imgs:
-        imgs_features.append(get_img_hists_arr(predict_img))
+    for classify_img in classify_imgs:
+        imgs_features.append(get_img_hists_arr(classify_img))
 
-    predictions = knn.predict(imgs_features)
-    print(predictions)
+    classes = knn.predict(imgs_features)
+    print(classes)
