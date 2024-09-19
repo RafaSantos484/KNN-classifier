@@ -10,7 +10,7 @@ def run():
     df = pd.DataFrame()
     classes = np.array([])
     for folder in folders:
-        folder_df = pd.read_csv(f'{folder}.csv')
+        folder_df = pd.read_csv(f'csvs/{folder}.csv')
         df = pd.concat([df, folder_df])
         classes = np.concatenate(
             [classes, np.full(folder_df.shape[0], folder)])

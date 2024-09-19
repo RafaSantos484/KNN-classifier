@@ -28,8 +28,7 @@ test_size = 0.3
 random_state = 42
 max_k = 100
 
-classify_imgs = ['gorilla.jpg', 'gorilla2.jpg',
-                'orangutan.jpg', 'orangutan2.jpg']
+classify_imgs_folder = 'classify_imgs'
 ```
 
 * `folders` - Pastas contendo as imagens para treinamento
@@ -38,7 +37,7 @@ classify_imgs = ['gorilla.jpg', 'gorilla2.jpg',
 * `test_size` - Porcentagem das imagens que serão usadas para teste do classificador(medição do score). O resto das imagens será usado para treinamento
 * `random_state` - Controla o embaralhamento aplicado aos dados antes de aplicar a divisão entre treino e teste. Útil para reproduzir a mesma saída em diferentes execuções
 * `max_k` - Valor máximo do parâmetro `K` quando estiver buscando o seu melhor valor
-* `classify_imgs` - Vetor de imagens definidas pelo usuário para teste do modelo treinado
+* `classify_imgs_folder` - Pasta contendo imagens definidas pelo usuário para teste do modelo treinado
 
 # Executando o Código
 
@@ -50,13 +49,13 @@ classify_imgs = ['gorilla.jpg', 'gorilla2.jpg',
 
 `poetry run imgs_to_csv`
 
-Para cada valor no parâmetro `folders`, um arquivo `.csv` será gerado no diretório raiz.
+A pasta ` csvs` será gerada por este comando. Para cada pasta no parâmetro  `folders`, um arquivo `.csv` será gerado e salvo em `csvs`.
 
 ## Realizando Treinamento
 
 `poetry run train`
 
-O classificador será exportado para o arquivo `knn_pickle`, que será usado na etapa de predição
+O classificador será exportado para o arquivo `knn_pickle`, que será usado na etapa de classificação.
 
 ## Classificando imagens
 
