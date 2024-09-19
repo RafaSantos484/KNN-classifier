@@ -51,12 +51,18 @@ classify_imgs_folder = 'classify_imgs'
 
 A pasta ` csvs` será gerada por este comando. Para cada pasta no parâmetro  `folders`, um arquivo `.csv` será gerado e salvo em `csvs`.
 
+![1726750461104](https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/rafas/OneDrive/Documentos/Projects/Tarefa%201.17%20Classificacao%20de%20Imagens/image/README/1726750461104.png)
+
 ## Realizando Treinamento
 
 `poetry run train`
 
 O classificador será exportado para o arquivo `knn_pickle`, que será usado na etapa de classificação.
 
+![1726750723034](image/README/1726750723034.png)
+
 ## Classificando imagens
 
 `poetry run classify`
+
+![1726750938508](image/README/1726750938508.png)
