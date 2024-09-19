@@ -51,7 +51,7 @@ classify_imgs_folder = 'classify_imgs'
 
 A pasta ` csvs` será gerada por este comando. Para cada pasta no parâmetro  `folders`, um arquivo `.csv` será gerado e salvo em `csvs`.
 
-![1726750461104](https://file+.vscode-resource.vscode-cdn.net/c%3A/Users/rafas/OneDrive/Documentos/Projects/Tarefa%201.17%20Classificacao%20de%20Imagens/image/README/1726750461104.png)
+![1726750461104](image/README/1726750461104.png)
 
 ## Realizando Treinamento
 
